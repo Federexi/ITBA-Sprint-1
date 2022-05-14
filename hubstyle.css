@@ -1,0 +1,38 @@
+
+.logo{
+    max-width: 160px;
+    margin-left: 2000%;
+}
+
+.margen{
+    margin-right: 20%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.head{
+    background-color: #1A2542;
+}
+
+.bl{
+    color: rgb(172, 172, 172);
+}
+
+.bl:hover{
+    color: white;
+}
+
+.fot{
+    max-height: 30px;
+    margin: 5px 15px 0px;
+}
+
+.fot1{
+    max-height: 20px;
+    margin: 10px 5px 0px;
+}
+
+.barra{
+    width: 1%;
+    height: 150%;
+}
