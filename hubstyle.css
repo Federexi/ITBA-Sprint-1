@@ -102,3 +102,14 @@
 .icder{
     margin-right: 20%;
 }
+
+.drop{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.fondo{
+    background-color: #1A2542;
+    margin-left: 13.5%;
+}

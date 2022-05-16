@@ -16,6 +16,7 @@
 
 <body>
 
+  <div class="sticky-top">
     <nav class="navbar navbar-expand-lg head">
         <div class="container-fluid">
           <a class="navbar-brand barra" href="#">
@@ -57,13 +58,19 @@
               <li class="nav-item">
                 <a class="nav-link ng" href="#"> Inversiones </a>  
               </li>
-              <li class="nav-item">
-                <a class="nav-link ng" href="#"> Mi Cuenta </a>  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ng" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Mi Cuenta </a>
+                <ul class="dropdown-menu fondo" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item drop" href="#">Actividad</a></li>
+                  <li><a class="dropdown-item drop" href="#">Gestiones</a></li>
+                  <li><a class="dropdown-item drop" href="#">Configuración</a></li>
+                  <li><a class="dropdown-item drop" href="#">Seguridad</a></li>
+                </ul>  
               </li>
             </ul>
         </div>
       </nav>
-
+    </div>
 
 
 
