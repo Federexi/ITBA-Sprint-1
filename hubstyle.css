@@ -18,6 +18,10 @@
     color: rgb(172, 172, 172);
 }
 
+.bl:focus{
+    color: rgb(172, 172, 172);
+}
+
 .bl:hover{
     color: white;
 }
@@ -35,4 +39,71 @@
 .barra{
     width: 1%;
     height: 150%;
+}
+
+.nav2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding-left: 1.5%;
+}
+
+.head2{
+    background-color: #24beff;
+}
+
+.ng{
+    color: #1A2542;
+    margin: 0px 60px;
+}
+
+.ng:hover{
+    color: white;
+}
+
+.active{
+    font-weight: bolder;
+}
+
+.footer{
+    background-color: #1A2542;
+    padding-top: 25px;
+}
+
+.ft{
+    color: rgb(172, 172, 172);
+    padding-left: 4.5%;
+}
+
+.nav3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.ic{
+    width: 25px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    margin: 0px 10px 5px 15px;
+}
+
+.ic2{
+    width: 34px;
+    margin: 0px 5px 0px 15px
+}
+
+.ic3{
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.ic:hover{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+}
+
+.icizq{
+    margin-left: 19%;
+}
+
+.icder{
+    margin-right: 20%;
 }
