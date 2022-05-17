@@ -49,6 +49,7 @@
 
 .head2{
     background-color: #24beff;
+    margin-bottom: 2%;
 }
 
 .ng{
@@ -86,12 +87,23 @@
     margin: 0px 10px 5px 15px;
 }
 
+.ic2{
+    width: 20px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    margin: 0px 0px 3px 10px;
+}
+
 .ic3{
     padding: 0px;
     margin-bottom: 10px;
 }
 
 .ic:hover{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+}
+
+.ic2:hover{
     filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
 }
 
@@ -112,4 +124,42 @@
 .fondo{
     background-color: #1A2542;
     margin-left: 13.5%;
+}
+
+.gap{
+    grid-gap: 20px;
+    margin-bottom: 2%;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.gap2{
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.fila{
+    background-color: rgb(237, 237, 237);
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: x-large;
+}
+
+.cent{
+    justify-content: center;
+}
+
+.mov{
+    height: 600px;
+}
+
+.titulo{
+    height: fit-content;
+    margin-bottom: 1%;
 }
