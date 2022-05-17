@@ -130,13 +130,13 @@
     grid-gap: 20px;
     margin-bottom: 2%;
     justify-content: center;
-    padding: 0px 10px;
+    padding: 0% 1%;
 }
 
 .gap2{
     grid-gap: 20px;
     justify-content: center;
-    padding: 0px 10px;
+    padding: 0% 1%;
 }
 
 .fila{
