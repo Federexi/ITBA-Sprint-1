@@ -1,4 +1,8 @@
 
+body{
+    background-color: rgb(235, 235, 235);
+}
+
 .logo{
     max-width: 160px;
     margin-left: 2000%;
@@ -49,7 +53,7 @@
 
 .head2{
     background-color: #24beff;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .ng{
@@ -57,12 +61,12 @@
     margin: 0px 60px;
 }
 
-.ng:hover{
-    color: white;
+.active1{
+    font-weight: bolder;
 }
 
-.active{
-    font-weight: bolder;
+.ng:hover{
+    color: white;
 }
 
 .footer{
@@ -126,33 +130,10 @@
     margin-left: 13.5%;
 }
 
-.gap{
-    grid-gap: 20px;
-    margin-bottom: 2%;
-    justify-content: center;
-    padding: 0% 1%;
-}
-
-.gap2{
-    grid-gap: 20px;
-    justify-content: center;
-    padding: 0% 1%;
-}
-
-.fila{
-    background-color: rgb(237, 237, 237);
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
-    font-size: x-large;
-}
-
 .cent{
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .mov{
@@ -162,4 +143,185 @@
 .titulo{
     height: fit-content;
     margin-bottom: 1%;
+}
+
+/* centro */
+
+.fondo1{
+    background-color:white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    font-size: 150%;
+    box-shadow: 1px 1px 10px #8c8c8c;
+}
+
+hr{
+    margin: 5px 0px;
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+
+.hr1{
+    margin: 2% 0px;
+    height: 1px;
+    background-color: rgb(74, 74, 74);
+}
+
+.hr2{
+    margin: 5px 0px 3% 0px;
+}
+
+.xd{
+    row-gap: 5px;
+}
+
+.fond{
+    background-color: white;
+    height: 10%;
+}
+
+.foto{
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2% 0% 5% 5%;
+    box-shadow: 1px 1px 10px #8c8c8c;
+    border-radius: 12px;
+}
+
+.foto:hover{
+    box-shadow: 1px 1px 10px #1e1e1e;
+}
+
+.foto2{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2% 5% 5% 0%;
+    box-shadow: 1px 1px 10px #8c8c8c;
+    border-radius: 12px;
+}
+
+.foto2:hover{
+    box-shadow: 1px 1px 10px #1e1e1e;
+}
+
+.alineacion{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.movim{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: rgb(201, 201, 201);
+    border-right: solid 1px rgb(54, 54, 54);
+    padding: 1% 0;
+}
+
+.movim2{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: white;
+    border-right: solid 1px rgb(54, 54, 54);
+    padding: 1% 0;
+}
+
+.movim3{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: rgb(201, 201, 201);
+    padding: 1% 0;
+}
+
+.movim4{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: white;
+    padding: 1% 0;
+}
+
+.medio{
+    text-align: start;
+    padding-left: 3%;
+}
+
+.marg{
+    padding: 1% 0.55em;
+}
+
+.icono{
+    width: 20px;
+    height: auto;
+    float: right;
+    margin: 3% 5% 0 0;
+    filter: invert(29%) sepia(0%) saturate(0%) hue-rotate(242deg) brightness(97%) contrast(87%);
+}
+
+.icono:hover{
+    filter: invert(0%) sepia(7%) saturate(21%) hue-rotate(5deg) brightness(78%) contrast(103%);
+}
+
+.txtcuenta{
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.boton{
+    width: 100%;
+}
+
+.boton1{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.boton2{
+    margin-bottom: 0;
+    margin-top: 1.5%;
+}
+
+.numcuenta{
+    font-size: 150%;
+    font-weight: 900;
+}
+
+.espacio{
+    font-size: 30%;
+    margin: 0 auto;
+}
+
+.espacio1{
+    font-size: 15%;
+    margin: 0 auto;
+}
+
+.achico{
+    margin: 0 0.03%;
+}
+
+.redo1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.redo2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding-left: 1.8%;
+}
+
+.btn-secondary{
+    background-color: rgb(172, 172, 172);
+    color: black;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-secondary:hover{
+    background-color: #343434;
 }
