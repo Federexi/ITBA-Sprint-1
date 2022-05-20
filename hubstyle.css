@@ -48,17 +48,18 @@ body{
 .nav2{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    padding-left: 1.5%;
 }
 
 .head2{
     background-color: #24beff;
     margin-bottom: 1%;
+    padding: 9px 0;
 }
 
 .ng{
     color: #1A2542;
-    margin: 0px 60px;
+    margin: 0px;
+    text-align: center;
 }
 
 .active1{
@@ -127,7 +128,7 @@ body{
 
 .fondo{
     background-color: #1A2542;
-    margin-left: 13.5%;
+    margin: 0 auto;
 }
 
 .cent{
@@ -325,3 +326,4 @@ hr{
 .btn-secondary:hover{
     background-color: #343434;
 }
+
