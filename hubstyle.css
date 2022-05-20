@@ -1,21 +1,26 @@
 
 body{
     background-color: rgb(235, 235, 235);
+    margin-bottom: 13.7%;
 }
 
 .logo{
     max-width: 160px;
-    margin-left: 2000%;
+
 }
 
 .margen{
-    margin-right: 20%;
+    margin-right: 25%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
 .head{
     background-color: #1A2542;
+}
+
+.salir{
+    justify-content: right;
 }
 
 .bl{
@@ -31,18 +36,21 @@ body{
 }
 
 .fot{
-    max-height: 30px;
-    margin: 5px 15px 0px;
-}
-
-.fot1{
-    max-height: 20px;
-    margin: 10px 5px 0px;
+    border-left: 1px solid rgb(172, 172, 172);
+    padding-left: 5px;
 }
 
 .barra{
-    width: 1%;
+    width: 8.5%;
     height: 150%;
+    margin-left: 19%;
+}
+
+.burger{
+    text-align: right;
+    padding-right: 8px;
+    width: 42px;
+    margin-left: 85%;
 }
 
 .nav2{
@@ -59,7 +67,7 @@ body{
 .ng{
     color: #1A2542;
     margin: 0px;
-    text-align: center;
+    width: 105px;
 }
 
 .active1{
@@ -72,12 +80,11 @@ body{
 
 .footer{
     background-color: #1A2542;
-    padding-top: 25px;
+    padding: 1.1% 0;
 }
 
 .ft{
     color: rgb(172, 172, 172);
-    padding-left: 4.5%;
 }
 
 .nav3{
@@ -85,23 +92,38 @@ body{
     font-weight: 400;
 }
 
+.contenido{
+    width: 55%;
+}
+
 .ic{
     width: 25px;
     height: auto;
     filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
-    margin: 0px 10px 5px 15px;
+    padding-top: 10px;
 }
 
 .ic2{
     width: 20px;
     height: auto;
     filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
-    margin: 0px 0px 3px 10px;
+    margin: 0px 5px 3px 10px;
+    padding: 0;
 }
 
 .ic3{
     padding: 0px;
-    margin-bottom: 10px;
+    margin: 0;
+}
+
+.ic4{
+    width: 25px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+}
+
+.ic5{
+    padding-bottom: 2px;
 }
 
 .ic:hover{
@@ -109,6 +131,10 @@ body{
 }
 
 .ic2:hover{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+}
+
+.ic4:hover{
     filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
 }
 
@@ -128,13 +154,18 @@ body{
 
 .fondo{
     background-color: #1A2542;
-    margin: 0 auto;
+
 }
 
 .cent{
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+}
+
+.cent1{
+    display: flex;
+    justify-content: center;
 }
 
 .mov{
@@ -325,5 +356,64 @@ hr{
 
 .btn-secondary:hover{
     background-color: #343434;
+}
+
+
+/* media */
+
+
+@media only screen and (min-width: 100px) and (max-width: 1450px){
+
+    .letramedia{
+        font-size: large;
+        font-weight: 900;
+
+}}
+
+@media only screen and (min-width: 100px) and (max-width: 1200px){
+
+    .letramedia{
+        font-size: medium;
+        font-weight: 900;
+
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px){
+  
+    .contenido{
+        width: 95%;
+    }
+    .letrachica{
+        font-size: xx-small;
+    }      
+    .ic4,.ic5,.ic{
+        width: 15px;
+    }
+    .letramedia{
+        font-size: small;
+        font-weight: 900;
+    }
+    .icono{
+        width: 10px;
+    }
+    }
+
+
+@media only screen and (min-width: 100px) and (max-width: 450px){
+
+    .ic4,.ic5,.ic{
+        width: 10px;
+    }    
+    .cent{
+        padding: 0
+    }
+    .icono{
+        width: 7px;
+    }
+    .letramedia{
+        font-size: x-small;
+        font-weight: 900;
+    }
 }
 
