@@ -1,7 +1,7 @@
 
 body{
     background-color: rgb(235, 235, 235);
-    margin-bottom: 13.7%;
+    margin-bottom: 13.5%;
 }
 
 .logo{
@@ -227,12 +227,12 @@ hr{
     display: flex;
     justify-content: center;
     margin: 2% 0% 5% 0%;
-    box-shadow: 1px 1px 10px #8c8c8c;
+    box-shadow: 0px 0px 10px #8c8c8c;
     border-radius: 6.5%;
 }
 
 .foto:hover{
-    box-shadow: 1px 1px 10px #1e1e1e;
+    box-shadow: 0px 0px 10px #1e1e1e;
 }
 
 .foto2{
@@ -241,12 +241,12 @@ hr{
     display: flex;
     justify-content: center;
     margin: 2% 0% 5% 0%;
-    box-shadow: 1px 1px 10px #8c8c8c;
+    box-shadow: 0px 0px 10px #8c8c8c;
     border-radius: 6.5%;
 }
 
 .foto2:hover{
-    box-shadow: 1px 1px 10px #1e1e1e;
+    box-shadow: 0px 0px 10px #1e1e1e;
 }
 
 .alineacion{
