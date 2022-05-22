@@ -1,0 +1,246 @@
+
+body{
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 13.5%;
+}
+
+.logo{
+    max-width: 160px;
+}
+
+.margen{
+    margin-right: 25%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.head{
+    background-color: #1A2542;
+}
+
+.salir{
+    justify-content: right;
+}
+
+.bl{
+    color: rgb(172, 172, 172);
+}
+
+.bl:focus{
+    color: rgb(172, 172, 172);
+}
+
+.bl:hover{
+    color: white;
+}
+
+.fot{
+    border-left: 1px solid rgb(172, 172, 172);
+    padding-left: 5px;
+}
+
+.barra{
+    width: 8.5%;
+    margin-left: 19%;
+}
+
+.burger{
+    width: fit-content;
+    padding: 0 1%;
+    border-radius: 3px;
+    filter: invert(500%) sepia(0%) saturate(1%) hue-rotate(3deg) brightness(100%) contrast(100%);
+    border-width: 1px;
+    border-color: #aeaeae;
+    margin-right: 3%;
+}
+
+.nav2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.head2{
+    background-color: #24beff;
+    margin-bottom: 1%;
+    padding: 9px 0;
+}
+
+.ng{
+    color: #1A2542;
+    margin: 0px;
+    width: 105px;
+}
+
+.active1{
+    font-weight: bolder;
+}
+
+.ng:hover{
+    color: white;
+}
+
+.footer{
+    background-color: #1A2542;
+    padding: 1.1% 0;
+}
+
+.ft{
+    color: rgb(172, 172, 172);
+}
+
+.nav3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.conteiner pad{
+    width: 55%;
+}
+
+.ic{
+    width: 25px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    padding-top: 10px;
+}
+
+.ic2{
+    width: 20px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    margin: 0px 5px 3px 10px;
+    padding: 0;
+}
+
+.ic3{
+    padding: 0px;
+    margin: 0;
+}
+
+.ic4{
+    width: 25px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+}
+
+.ic5{
+    padding-bottom: 1.6%;
+}
+
+.ic:hover{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+}
+
+.ic2:hover{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+}
+
+.ic4:hover{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+}
+
+.icizq{
+    margin-left: 19%;
+}
+
+.icder{
+    margin-right: 20%;
+}
+
+.drop{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.fondo{
+    background-color: #1A2542;
+
+}
+
+.cent{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cent1{
+    display: flex;
+    justify-content: center;
+}
+
+.cent2{
+    display: flex;
+    justify-content: center;
+}
+
+.mov{
+    height: 600px;
+}
+
+.titulo{
+    height: fit-content;
+    margin-bottom: 1%;
+}
+
+
+
+/* centro */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr{
+    margin: 5px 0px;
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+
+.hr1{
+    margin: 2% 0px;
+    height: 1px;
+    background-color: rgb(74, 74, 74);
+}
+
+.hr2{
+    margin: 5px 0px 3% 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.btn-secondary{
+    background-color: rgb(172, 172, 172);
+    color: black;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-secondary:hover{
+    background-color: #343434;
+}
+
+
+
+
+
+
