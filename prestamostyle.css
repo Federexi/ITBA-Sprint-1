@@ -54,6 +54,7 @@ body{
     margin-right: 3%;
 }
 
+
 .nav2{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -187,21 +188,6 @@ body{
 
 /* centro */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 hr{
     margin: 5px 0px;
     height: 2px;
@@ -219,15 +205,6 @@ hr{
     margin: 5px 0px 3% 0px;
 }
 
-
-
-
-
-
-
-
-
-
 .btn-secondary{
     background-color: rgb(172, 172, 172);
     color: black;
@@ -240,7 +217,155 @@ hr{
 }
 
 
+/* media */
+
+@media only screen and (min-width: 100px) and (max-width: 1450px){
+
+    .letramedia{
+        font-size: large;
+        font-weight: 900;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 1290px){
+
+    .letrachica1{
+        font-size: 60%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .foto, .foto2{
+        width: 47%;
+        margin: 0.5%;
+    }
+}
 
 
 
+@media only screen and (min-width: 100px) and (max-width: 1200px){
 
+    .letramedia{
+        font-size: medium;
+        font-weight: 900;
+
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1060px){
+
+    .letramedia{
+        font-size: 50%;
+    }
+    .icono{
+        width: 12px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px){
+  
+    .contenido{
+        width: 95%;
+    }
+    .letrachica{
+        font-size: xx-small;
+    }      
+    .ic4,.ic5,.ic{
+        width: 15px;
+    }
+    .letramedia{
+        font-size: small;
+        font-weight: 900;
+    }
+    .icono{
+        width: 10px;
+    }
+    .barra{
+        width: 30%;
+        margin-left: 2%;
+    }
+    .margen{
+        margin-right: 5%;
+    }
+    .ng:focus{
+        color: #1A2542;
+    }
+    .ng:hover{
+        color: #1A2542;
+    }
+    .nav2{
+        justify-content: right;
+    }
+    .cent1{
+        justify-content: left;
+    }
+    .ic{
+        padding-top: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 576px){
+
+    .margen{
+        display: inline-block;
+        margin-right: 1%;
+    }
+    .margen1{
+        float: left;
+    }
+    .margen2{
+        display: block;
+        text-align: center;
+    }
+    .salir{
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 450px){
+
+    .ic4,.ic5,.ic{
+        width: 10px;
+    }    
+    .icono{
+        width: 7px;
+    }
+    .letramedia{
+        font-size: x-small;
+        font-weight: 900;
+    }
+    .movim, .movim2, .movim3, .movim4, .redo2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .medio{
+        padding-left: 3%;
+    }
+    .arreglofooter{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .letrachica2{
+        font-size: 50%;
+    }
+    .ic{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 260px){
+
+    .letrachica{
+        font-size: 30%;
+    }  
+    .letrachica2{
+        font-size: 80%;
+    }
+    .fondo1{
+        font-size: 90%;
+    }
+    .boton3{
+        font-size: 80%;
+    }
+}
