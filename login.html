@@ -16,20 +16,26 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg head">
+    <div class="sticky-top">
+      <nav class="navbar navbar-dark navbar-expand-sm head">
         <div class="container-fluid">
           <a class="navbar-brand barra" href="#">
-          <img src="archivos/logo itbank blanco.png" alt="Logo itbank" class="d-inline-block align-text-top logo">
+            <img src="archivos/logo itbank blanco.png" alt="Logo itbank" class="d-inline-block align-text-top logo">
           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse salir" id="navbarSupportedContent">
             <ul class="navbar-nav margen">
-              <li class="nav-item">
-                <a class="nav-link bl" href="#"> Ayuda </a>  
+              <li class="nav-item margen1">
+                <a class="nav-link bl margen2" href="#">Ayuda<img src="archivos/headset.svg" class="ic2"></a>  
               </li>
-              <li class="nav-item">
-                  <a href=""><img src="archivos/ayuda1.png" class="fot1"></a>
             </ul>
+          </div>
         </div>
       </nav>
+    </div>
+
     <div class="login">
         <h1>Hola! Ingresa tu usuario y contraseña</h1>
         <form class="formu">
@@ -44,6 +50,7 @@
     </div>
 
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
 </body>
 </html>

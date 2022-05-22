@@ -1,13 +1,16 @@
 /* diseño nav*/
 .logo{
     max-width: 160px;
-    margin-left: 2000%;
 }
 
 .margen{
-    margin-right: 20%;
+    margin-right: 25%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+}
+
+.salir{
+    justify-content: right;
 }
 
 .head{
@@ -23,22 +26,59 @@
 }
 
 .fot{
-    max-height: 30px;
-    margin: 5px 15px 0px;
-}
-
-.fot1{
-    max-height: 20px;
-    margin: 10px 5px 0px;
+    border-left: 1px solid rgb(172, 172, 172);
+    padding-left: 5px;
 }
 
 .barra{
-    width: 1%;
-    height: 150%;
+    width: 8.5%;
+    margin-left: 19%;
 }
+
+.ic2{
+    width: 20px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    margin: 0px 5px 3px 10px;
+    padding: 0;
+}
+
+.ic2:hover{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px){
+
+    .barra{
+        width: 30%;
+        margin-left: 2%;
+    }
+    .margen{
+        margin-right: 5%;
+    }
+    }
+
+@media only screen and (min-width: 100px) and (max-width: 576px){
+
+    .margen{
+            display: inline-block;
+            margin-right: 1%;
+    }
+    .margen1{
+            float: left;
+    }
+    .margen2{
+            display: block;
+            text-align: center;
+    }
+    .salir{
+            text-align: right;
+    }
+    }
+
 /* diseño pagina de login*/
 body{
-    margin 0;
+    margin: 0;
     background:url(/archivos/imgb.jpg) no-repeat center top ;
     background-size: cover;
     width:auto;
