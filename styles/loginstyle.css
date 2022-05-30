@@ -80,7 +80,7 @@
 /* diseño pagina de login*/
 body{
     margin: 0;
-    background:url(/archivos/imgb.jpg) no-repeat center top ;
+    background:url(../archivos/imgb.jpg) no-repeat center top ;
     background-size: cover;
     width:auto;
     height: auto;
