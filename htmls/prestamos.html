@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITBANK - Préstamos</title>
+    <link rel="shortcut icon" href="../archivos/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/prestamostyle.css">
+</head>
+
+<body>
+
+    <div class="sticky-top">
+      <nav class="navbar navbar-dark navbar-expand-sm head">
+        <div class="container-fluid">
+          <a class="navbar-brand barra" href="hub.html">
+            <img src="../archivos/logo itbank blanco.png" alt="Logo itbank" class="d-inline-block align-text-top logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse salir" id="navbarSupportedContent">
+            <ul class="navbar-nav margen">
+              <li class="nav-item margen1">
+                <a class="nav-link bl margen2" href="#">Ayuda<img src="../archivos/info.svg" class="ic2"></a>  
+              </li>
+              <li class="nav-item fot margen1">
+                <a class="nav-link bl margen2" href="index.html">Salir<img src="../archivos/box-arrow-right.svg" class="ic2"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <nav class="navbar-dark navbar-expand-md">
+        <div class="container-fluid">
+          <div class="row head2 nav2">
+            <button class="navbar-toggler burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="../archivos/logo itbank.png" alt="Logo itbank" class="d-inline-block align-text-top logo">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="col-1"></div>
+                <div class="col-2 cent1"><a class="nav-link ng" href="hub.html"> Inicio </a></div>
+                <div class="col-2 cent1"><a class="nav-link active1 ng" href="prestamos.html"> Préstamos </a></div>
+                <div class="col-2 cent1"><a class="nav-link ng" href="transferencias.html"> Transferencias </a></div>
+                <div class="col-2 cent1"><a class="nav-link ng" href="inversiones.html"> Inversiones </a></div>
+                <div class="col-2 cent1"><a class="nav-link dropdown-toggle ng" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Cuenta </a>
+                  <ul class="dropdown-menu fondo drop" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item drop" href="actividad.html">Actividad</a></li>
+                    <li><a class="dropdown-item drop" href="gestiones.html">Gestiones</a></li>
+                    <li><a class="dropdown-item drop" href="configuracion.html">Configuración</a></li>
+                    <li><a class="dropdown-item drop" href="seguridad.html">Seguridad</a></li>
+                  </ul>
+                </div>
+              <div class="col-1 cent1"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+    <div class="container pad">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Solicitá un préstamo</h3>
+                <p>Ingresá los datos y presioná calcular para obtener los resultados.</p>
+                <form action="/solicitudPrestamo" method="GET">
+                    <div class="form-group">
+                        <label for="capitalLabel">Capital</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="capital" name="capital" aria-describedby="capitalHelp" 
+                            max="100000" min="5000" placeholder="5000" required>
+                        </div>
+                        <small id="capitalHelp" class="form-text text-muted">Máximo $100000</small>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="plazoLabel">Duración del préstamo (en meses)</label>
+                        <input type="number" class="form-control" id="plazo" name="plazo" 
+                        aria-describedby="plazoHelp" max="72" min="1" placeholder="12" required>
+                        <small id="plazoHelp" class="form-text text-muted">Máximo 72 meses</small>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="sistemaLabel">Sistema de amortización</label>
+                        <select class="form-control" id="sistema" name="sistema" required>
+                            <option value="1">Francés</option>
+                            <option value="2">Alemán</option>
+                        </select>
+                        </div>
+    
+                    <button onclick="calcularAmort()" id="Calcular" type="button" class="btn btn-primary">Calcular</button>
+                    <button type="submit" id="solicitudPrestamo" class="btn btn-success">Solicitar</button>
+                    <button onclick="printJS({
+                         printable: 'tablaAmortizacion',
+                         type:'html',
+                         css: 'https:\/\/stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+                         })"
+                        id="Imprimir" type="button" class="btn btn-alert">Imprimir</button>
+                </form>
+            </div><!-- Columna izquierda -->
+    
+            <div class="col-md-8">
+                <div class="right-area">
+                    <h3 class="alert alert-primary">Importe de la primera cuota</h3>
+                    <form>
+                        <div class="row">
+                            <label for="ResultadoCapital" class="col-sm-5 col-form-label">Amortización + Intereses</label>
+                            <div class="col-sm-3">
+                                <label type="text" class="col-form-label importante" id="ResultadoCapital"></label>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        
+
+                        <div class="row">
+                            <label for="Fecha" class="col-sm-5 col-form-label">Fecha de pago</label>
+                            <div class="col-sm-3">
+                                <label type="text" class="col-form-label" id="Fecha"></label>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="row">
+                            <label for="Ingresos" class="col-sm-5 col-form-label">Ingresos Necesarios</label>
+                            <div class="col-sm-3">
+                                <label type="text" class="col-form-label importante" id="Ingresos"></label>
+                            </div>
+                        </div>
+                    </form>
+    
+                    <h3 class="alert alert-primary">Tasas</h3>
+                    <form>
+                        <div class="row">
+                                <abbr class="col-sm-5 col-form-label" for="tna" title="Tasa Nominal Anual">Tasa Nómina Anual</abbr>
+                            <div class="col-sm-3">
+                                <label type="text" class="col-form-label" id="TNA"></label>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="row">
+                                <abbr class="col-sm-5 col-form-label" for="tem" title="Tasa Efectiva Mensual">Tasa Efectiva Mensual</abbr>
+                            <div class="col-sm-3">
+                                <label type="text" class="col-form-label" id="TEM"></label>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- right-area -->
+            </div><!-- Columna derecha -->
+        </div><!-- row -->
+        <div class="row" style="padding: 40px">
+            <table id="tablaAmortizacion" class="table table-hover table-striped">
+                <caption id="descripcion">Tabla de amortización</caption>
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Interés</th>
+                        <th scope="col">Amortización</th>
+                        <th scope="col">Cuota</th>
+                        <th scope="col">Saldo</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                </tbody>
+            </table>
+        </div><!-- Tabla -->
+    </div><!-- container -->
+
+
+    <div class="container-fluid fixed-bottom letrachica">
+        <div class="row nav3 footer ft">
+          <div class="col-2 arreglofooter"></div>
+          <div class="col-2 arreglofooter">
+            <div class="row">
+              <div class="col-4 cent arreglofooter">
+                <a class="nav-link margen2 ic3" href="https://twitter.com/home" target="_blank"><img src="../archivos/twitter.svg" alt="twitter" class="ic"></a>
+              </div>
+              <div class="col-4 cent arreglofooter">
+                <a class="nav-link margen2 ic3" href="https://www.facebook.com/" target="_blank"><img src="../archivos/facebook.svg" alt="facebook" class="ic"></a>
+              </div>
+              <div class="col-4 cent arreglofooter">
+                <a class="nav-link margen2 ic3" href="https://www.instagram.com/" target="_blank"><img src="../archivos/instagram.svg" alt="instagram" class="ic"></a>
+              </div>
+            </div> 
+          </div>
+          <div class="col-4 arreglofooter letrachica2">
+            <p class="cent arreglofooter">© 2022 ITBANK S.A. <br>Todos los derechos Reservados</p>
+          </div>
+          <div class="col-2 arreglofooter">
+            <div class="row">
+              <div class="col-6 cent arreglofooter letrachica1">
+                <a class="nav-link bl margen2 ic3" href="https://www.apple.com/app-store/" target="_blank"><img src="../archivos/apple.svg" alt="App store" class="ic4 ic5"><p class="ic3">App Store</p></a>
+              </div>
+              <div class="col-6 cent arreglofooter letrachica1">
+                <a class="nav-link bl margen2 ic3" href="https://play.google.com/store?hl=es" target="_blank"><img src="../archivos/google-play.svg" alt="google Play" class="ic4"><p class="ic3">Google Play</p></a>
+              </div>
+          </div>
+          <div class="col-2 arreglofooter"></div>
+        </div>
+      </div>
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    </body>
+    
+    </html>
+    

@@ -1,0 +1,151 @@
+/* diseño nav*/
+.logo{
+    max-width: 160px;
+}
+
+.margen{
+    margin-right: 25%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.salir{
+    justify-content: right;
+}
+
+.head{
+    background-color: #1A2542;
+}
+
+.bl{
+    color: rgb(172, 172, 172);
+}
+
+.bl:hover{
+    color: white;
+}
+
+.fot{
+    border-left: 1px solid rgb(172, 172, 172);
+    padding-left: 5px;
+}
+
+.barra{
+    width: 8.5%;
+    margin-left: 19%;
+}
+
+.ic2{
+    width: 20px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    margin: 0px 5px 3px 10px;
+    padding: 0;
+}
+
+.margen2:hover{
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(330deg) brightness(1000%) contrast(100%);
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 768px){
+
+    .barra{
+        width: 30%;
+        margin-left: 2%;
+    }
+    .margen{
+        margin-right: 5%;
+    }
+    }
+
+@media only screen and (min-width: 100px) and (max-width: 576px){
+
+    .margen{
+            display: inline-block;
+            margin-right: 1%;
+    }
+    .margen1{
+            float: left;
+    }
+    .margen2{
+            display: block;
+            text-align: center;
+    }
+    .salir{
+            text-align: right;
+    }
+    }
+
+/* diseño pagina de login*/
+body{
+    margin: 0;
+    background:url(/archivos/imgb.jpg) no-repeat center top ;
+    background-size: cover;
+    width:auto;
+    height: auto;
+    font-family:'Lato', sans-serif;
+   
+}
+.login{
+    width: 424px;
+    height: 424.59px;
+    background: rgb(250, 250, 250);
+    color:rgb(0, 0, 0);
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50%, -50%) ;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 2%;
+
+}
+.login h1{
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight:bold; 
+    display: block;
+    font-size: 24px;    
+}
+.login label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    font-size: 15px;
+}
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login input[type="email" ],
+.login input[type="password"]{
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}  
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#1A2542;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+
+} 
+.login a{
+    padding: none;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: darkgray;
+}
+.login a:hover{
+    color:#1A2542;
+}

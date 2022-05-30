@@ -79,15 +79,6 @@ body{
     color: white;
 }
 
-.container-hall {
-    position: relative;
-}
-
-.fondo-hall {
-    width: 100%;
-    height: 350px;
-}
-
 .footer{
     background-color: #1A2542;
     padding: 1.1% 0;
@@ -136,16 +127,8 @@ body{
     padding-bottom: 1.6%;
 }
 
-.ic:hover{
-    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
-}
-
-.ic2:hover{
-    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
-}
-
-.ic4:hover{
-    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(325deg) brightness(101%) contrast(100%);
+.margen2:hover{
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(330deg) brightness(1000%) contrast(100%);
 }
 
 .icizq{
@@ -192,106 +175,192 @@ body{
     margin-bottom: 1%;
 }
 
-.container-hall {
-    position: relative;
+/* centro */
+
+.fondo1{
+    background-color:white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    font-size: 150%;
+    box-shadow: 1px 1px 10px #8c8c8c;
 }
 
-.section-hub-card {
-    position: absolute;
-    display: grid;
-    background-color: #FFFFFF;
-    margin-top: -90px;
-    margin-left: 200px;
-    padding: 10px;
-    border-radius: 20px;
-    font-family: 'lato';
-    grid-template-columns: 136px 226px ;
-    grid-template-rows: 50px 50px 50px;
-    column-gap: 10px;
+hr{
+    margin: 5px 0px;
+    height: 2px;
+    border: none;
+    background-color: black;
 }
 
-.tarjeta {
-    grid-column: 1/2;
-    grid-row: 1/4;
-    width: 130px;
-    height: 70px;
+.hr1{
+    margin: 2% 0px;
+    height: 1px;
+    background-color: rgb(74, 74, 74);
+}
+
+.hr2{
+    margin: 5px 0px 3% 0px;
+}
+
+.xd{
+    row-gap: 5px;
+}
+
+.fond{
+    background-color: white;
+    height: 10%;
+}
+
+.foto{
+    width: 95%;
+    max-width: 310px;
+    display: flex;
     justify-content: center;
-    align-self: center;
+    margin: 2% 0% 5% 0%;
+    box-shadow: 0px 0px 10px #8c8c8c;
+    border-radius: 6.5%;
 }
 
-.section-hub-card h3 {
-    font-weight: bold;
+.foto:hover{
+    box-shadow: 0px 0px 10px #1e1e1e;
 }
 
-.section-hub-card p {
-    font-size: 14px;
-    align-self: center;
-}
-
-.section-hub-card a {
-    background-color: #1A2542;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 64px 10px 64px;
-    text-decoration: none;
-    color: #aeaeae;
-    box-shadow: 1px 1px 1px  black;
-}
-
-.section-hub-card a:hover {
-    color: #FFFFFF;
-    background-color: #212d4e;
-}
-
-.section-hub-card2 {
-    position: absolute;
-    display: grid;
-    background-color: #FFFFFF;
-    margin-top: -90px;
-    margin-left: 730px;
-    padding: 10px;
-    border-radius: 20px;
-    font-family: 'lato';
-    grid-template-columns: 136px 226px ;
-    grid-template-rows: 50px 50px 50px;
-    column-gap: 10px;
-}
-
-.oficina {
-    grid-column: 1/2;
-    grid-row: 1/4;
-    width: 120px;
-    height: 100px;
+.foto2{
+    width: 95%;
+    max-width: 310px;
+    display: flex;
     justify-content: center;
-    align-self: center;
+    margin: 2% 0% 5% 0%;
+    box-shadow: 0px 0px 10px #8c8c8c;
+    border-radius: 6.5%;
 }
 
-.section-hub-card2 h3 {
-    font-size: 27px;
-    font-weight: bold;
+.foto2:hover{
+    box-shadow: 0px 0px 10px #1e1e1e;
 }
 
-.section-hub-card2 p {
-    font-size: 13px;
-    align-self: center;
+.alineacion{
+    margin: 0 auto;
+    padding: 0;
 }
 
-.section-hub-card2 a {
-    background-color: #1A2542;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 64px 10px 64px;
-    text-decoration: none;
-    color: #aeaeae;
-    box-shadow: 1px 1px 1px  black;
+.movim{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: rgb(201, 201, 201);
+    border-right: solid 1px rgb(54, 54, 54);
+    padding: 1% 0;
 }
 
-.section-hub-card2 a:hover {
-    color: #FFFFFF;
-    background-color: #212d4e;
+.movim2{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: white;
+    border-right: solid 1px rgb(54, 54, 54);
+    padding: 1% 0;
 }
+
+.movim3{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: rgb(201, 201, 201);
+    padding: 1% 0;
+}
+
+.movim4{
+    font-size: 90%;
+    font-weight: 700;
+    background-color: white;
+    padding: 1% 0;
+}
+
+.medio{
+    text-align: start;
+    padding-left: 3%;
+}
+
+.marg{
+    padding: 1% 0.55em;
+}
+
+.icono{
+    width: 20px;
+    height: auto;
+    float: right;
+    margin: 3% 5% 0 0;
+    filter: invert(29%) sepia(0%) saturate(0%) hue-rotate(242deg) brightness(97%) contrast(87%);
+}
+
+.icono:hover{
+    filter: invert(0%) sepia(7%) saturate(21%) hue-rotate(5deg) brightness(78%) contrast(103%);
+}
+
+.txtcuenta{
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.boton{
+    width: 100%;
+}
+
+.boton1{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.boton2{
+    margin-bottom: 0;
+    margin-top: 1.5%;
+}
+
+.numcuenta{
+    font-size: 150%;
+    font-weight: 900;
+}
+
+.espacio{
+    font-size: 30%;
+    margin: 0 auto;
+}
+
+.espacio1{
+    font-size: 15%;
+    margin: 0 auto;
+}
+
+.achico{
+    margin: 0 0.03%;
+}
+
+.redo1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.redo2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding-left: 1.8%;
+}
+
+.btn-secondary{
+    background-color: rgb(172, 172, 172);
+    color: black;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-secondary:hover{
+    background-color: #343434;
+}
+
+
+/* media */
+
 
 @media only screen and (min-width: 100px) and (max-width: 1450px){
 

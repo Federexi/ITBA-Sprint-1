@@ -1,0 +1,363 @@
+
+body{
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 13.5%;
+}
+
+.logo{
+    max-width: 160px;
+}
+
+.margen{
+    margin-right: 25%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.head{
+    background-color: #1A2542;
+}
+
+.salir{
+    justify-content: right;
+}
+
+.bl{
+    color: rgb(172, 172, 172);
+}
+
+.bl:focus{
+    color: rgb(172, 172, 172);
+}
+
+.bl:hover{
+    color: white;
+}
+
+.fot{
+    border-left: 1px solid rgb(172, 172, 172);
+    padding-left: 5px;
+}
+
+.barra{
+    width: 8.5%;
+    margin-left: 19%;
+}
+
+.burger{
+    width: fit-content;
+    padding: 0 1%;
+    border-radius: 3px;
+    filter: invert(500%) sepia(0%) saturate(1%) hue-rotate(3deg) brightness(100%) contrast(100%);
+    border-width: 1px;
+    border-color: #aeaeae;
+    margin-right: 3%;
+}
+
+
+.nav2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.head2{
+    background-color: #24beff;
+    margin-bottom: 1%;
+    padding: 9px 0;
+}
+
+.ng{
+    color: #1A2542;
+    margin: 0px;
+    width: 105px;
+}
+
+.active1{
+    font-weight: bolder;
+}
+
+.ng:hover{
+    color: white;
+}
+
+.footer{
+    background-color: #1A2542;
+    padding: 1.1% 0;
+}
+
+.ft{
+    color: rgb(172, 172, 172);
+}
+
+.nav3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.conteiner pad{
+    width: 55%;
+}
+
+.ic{
+    width: 25px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    padding-top: 10px;
+}
+
+.ic2{
+    width: 20px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+    margin: 0px 5px 3px 10px;
+    padding: 0;
+}
+
+.ic3{
+    padding: 0px;
+    margin: 0;
+}
+
+.ic4{
+    width: 25px;
+    height: auto;
+    filter: invert(84%) sepia(12%) saturate(22%) hue-rotate(324deg) brightness(81%) contrast(88%);
+}
+
+.ic5{
+    padding-bottom: 1.6%;
+}
+
+.margen2:hover{
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(330deg) brightness(1000%) contrast(100%);
+}
+
+.icizq{
+    margin-left: 19%;
+}
+
+.icder{
+    margin-right: 20%;
+}
+
+.drop{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.fondo{
+    background-color: #1A2542;
+
+}
+
+.cent{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cent1{
+    display: flex;
+    justify-content: center;
+}
+
+.cent2{
+    display: flex;
+    justify-content: center;
+}
+
+.mov{
+    height: 600px;
+}
+
+.titulo{
+    height: fit-content;
+    margin-bottom: 1%;
+}
+
+
+
+/* centro */
+
+hr{
+    margin: 5px 0px;
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+
+.hr1{
+    margin: 2% 0px;
+    height: 1px;
+    background-color: rgb(74, 74, 74);
+}
+
+.hr2{
+    margin: 5px 0px 3% 0px;
+}
+
+.btn-secondary{
+    background-color: rgb(172, 172, 172);
+    color: black;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-secondary:hover{
+    background-color: #343434;
+}
+
+
+/* media */
+
+@media only screen and (min-width: 100px) and (max-width: 1450px){
+
+    .letramedia{
+        font-size: large;
+        font-weight: 900;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 1290px){
+
+    .letrachica1{
+        font-size: 60%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .foto, .foto2{
+        width: 47%;
+        margin: 0.5%;
+    }
+}
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 1200px){
+
+    .letramedia{
+        font-size: medium;
+        font-weight: 900;
+
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1060px){
+
+    .letramedia{
+        font-size: 50%;
+    }
+    .icono{
+        width: 12px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px){
+  
+    .contenido{
+        width: 95%;
+    }
+    .letrachica{
+        font-size: xx-small;
+    }      
+    .ic4,.ic5,.ic{
+        width: 15px;
+    }
+    .letramedia{
+        font-size: small;
+        font-weight: 900;
+    }
+    .icono{
+        width: 10px;
+    }
+    .barra{
+        width: 30%;
+        margin-left: 2%;
+    }
+    .margen{
+        margin-right: 5%;
+    }
+    .ng:focus{
+        color: #1A2542;
+    }
+    .ng:hover{
+        color: #1A2542;
+    }
+    .nav2{
+        justify-content: right;
+    }
+    .cent1{
+        justify-content: left;
+    }
+    .ic{
+        padding-top: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 576px){
+
+    .margen{
+        display: inline-block;
+        margin-right: 1%;
+    }
+    .margen1{
+        float: left;
+    }
+    .margen2{
+        display: block;
+        text-align: center;
+    }
+    .salir{
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 450px){
+
+    .ic4,.ic5,.ic{
+        width: 10px;
+    }    
+    .icono{
+        width: 7px;
+    }
+    .letramedia{
+        font-size: x-small;
+        font-weight: 900;
+    }
+    .movim, .movim2, .movim3, .movim4, .redo2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .medio{
+        padding-left: 3%;
+    }
+    .arreglofooter{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .letrachica2{
+        font-size: 50%;
+    }
+    .ic{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 260px){
+
+    .letrachica{
+        font-size: 30%;
+    }  
+    .letrachica2{
+        font-size: 80%;
+    }
+    .fondo1{
+        font-size: 90%;
+    }
+    .boton3{
+        font-size: 80%;
+    }
+}
